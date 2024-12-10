@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reverse a string</title>
+</head>
+
+<body>
+  <input type="text" id="str"placeholder="Enter a number">
+  <button id="btn">Reverse</button><br>
+  <p id="para"></p>
+  
+  <script>
+    const str = document.getElementById("str");
+    const btn = document.getElementById("btn");
+    
+    const para = document.getElementById("para");
+   
+    
+    btn.addEventListener("click",function(){
+      
+      var store = str.value;
+      var store2 = store.split("").reverse().join();
+      para.innerHTML=store2;
+      
+    });
+  </script>
+</body>
+
+</html>
