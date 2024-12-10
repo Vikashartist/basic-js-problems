@@ -4,11 +4,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>palindrome</title>
 </head>
 
 <body>
-ill do it later wait
+<h4>Program to check palindrome.</h4>
+
+<input type="text"id="inp">
+<button id="btn">check</button>
+
+<script>
+  const inp = document.getElementById("inp");
+  const btn = document.getElementById("btn");
+  
+ btn.addEventListener("click",function(){
+  
+   var store = inp.value;
+   var store2 = store.split('').reverse().join('');
+   if(store2===store){
+     console.log("palindrome");
+   }else{
+     console.log("not palindrome");
+   }
+  // console.log(store2);
+ });
+</script>
 </body>
 
 </html>
