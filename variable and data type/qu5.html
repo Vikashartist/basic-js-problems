@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Numbers of vowels</title>
+</head>
+
+<body>
+<!-- <input type="text" id="inp"placeholder="Enter a string.">
+<button id="btn">check</button> -->
+
+<script>
+  // const inp = document.getElementById("inp");
+  // const btn = document.getElementById("btn");
+  
+  // btn.addEventListener("click",function(){
+  //   var store = inp.value;
+  //   var store2 = store.toString().match(/[aeiou]/ig);
+  //   if(store2==store){
+  //     console.log("true");
+      
+  //   }else{
+  //     console.log("false");
+  //   }
+   
+  // });
+  
+  
+  
+  
+  // function countVowels(string){
+  //   const vowels ='aeiouAEIOU';
+  //   let count = 0;
+    
+  //   for(let char of string){
+  //     if(vowels.includes(char)){
+  //       count++;
+  //     }
+  //   }
+  //   return count;
+  // }
+  
+  
+  
+  
+  function countVowels(string) {
+  const vowels = 'aeiouAEIOU';
+  let count = 0;
+
+  for (let char of string) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+// Input from the user
+const userInput = prompt("Enter a string:");
+const vowelCount = countVowels(userInput);
+
+console.log(`The number of vowels in the string is: ${vowelCount}`);
+alert(`The number of vowels in the string is: ${vowelCount}`);
+</script>
+</body>
+
+</html>

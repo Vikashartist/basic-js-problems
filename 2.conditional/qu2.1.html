@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conditional statement</title>
+</head>
+
+<body>
+<h4>Program to determine the number is positive of not.</h4>
+<input id="inp" type="number"placeholder="Enter a number "autofocus>
+<button id="btn">check</button>
+<br>
+<p id="res"></p>
+<script>
+  const inp = document.getElementById("inp");
+  const btn = document.getElementById("btn");
+  const res = document.getElementById("res");
+  btn.addEventListener("click",function(){
+   
+    var store = parseInt(inp.value);
+    console.log(store);
+    if(store<0){
+      
+      res.innerHTML="number is negative";
+      
+    }else if(store>0){
+      res.innerHTML="number is positive";
+      
+    }else if(store==0){
+     res.innerHTML="number is zero";
+    }
+  });
+ 
+</script>
+</body>
+
+</html>

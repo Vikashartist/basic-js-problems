@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Leap Year</title>
+</head>
+
+<body>
+<h4>Program to check leep year</h4>
+<input type="number" id="inp"autofocus placeholder="Enter the year">
+<button id="btn">Check</button>
+<br>
+<p id="para"></p>
+<script>
+  const inp = document.getElementById("inp");
+  const btn = document.getElementById("btn");
+  const para = document.getElementById("para");
+  
+  btn.addEventListener("click",function(){
+
+    var store = parseInt(inp.value);
+    if((store%4)==0 && (store%100)!=0 || store%400 ==0){
+     para.innerHTML="This is a leep year."
+    }else {
+      para.innerHTML ="This is not a leap year"
+    }
+    
+  });
+</script>
+
+
+</body>
+
+</html>

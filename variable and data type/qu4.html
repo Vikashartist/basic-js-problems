@@ -12,19 +12,22 @@
 
 <input type="text"id="inp">
 <button id="btn">check</button>
+<p id="para"></p>
 
 <script>
   const inp = document.getElementById("inp");
   const btn = document.getElementById("btn");
+  const para = document.getElementById("para");
   
  btn.addEventListener("click",function(){
   
    var store = inp.value;
    var store2 = store.split('').reverse().join('');
    if(store2===store){
-     console.log("palindrome");
+     para.innerHTML="It is palindrome";
+    
    }else{
-     console.log("not palindrome");
+     para.innerHTML="it si not palindrome";
    }
   // console.log(store2);
  });
